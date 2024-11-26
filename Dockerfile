@@ -13,5 +13,8 @@ WORKDIR /app
 # Whenever you want to run the any command(linux/node or any command) inside the container you have use RUN derective
 RUN  npm install
 
-# 5. CMD directive, start the application 
+# 5. Expose the port that your app listens on inside the container (e.g., 3000)
+EXPOSE 3007
+
+# 6. CMD directive, start the application 
 CMD ["npm", "run", "dev"]
